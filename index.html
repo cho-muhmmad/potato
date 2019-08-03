@@ -4,42 +4,12 @@
 <head>
     <title>Potato</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-    <style>
-        .red-text {
-            color: red;
-        }
-        h1 {
-            font-size: 5rem;
-            font-family: 'Comic Sans MS';
-        }
-        h2 {
-            font-family: 'Playfair Display', sans-serif;
-        }
-        p {
-            font-size: 2rem;
-        }
-        .fair-img {
-            width: 10rem;
-            border-color: pink;
-            border-width: 1rem;
-            border-style: dashed;
-            border-radius: 50%;
-        }
-        .gray-back {
-            background-color: antiquewhite;
-        }
-        #header {
-            border-color:blueviolet;
-            border-width: 1rem;
-            border-style:double;
-
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
 	<header id="header">
-		<nav>
-			<a href="#footer">Jump to Bottom</a>
+		<nav style="text-align: center;">
+            <a href="tater_blog.html">Go to Tater Blog</a>
 		</nav>
     </header>
     
@@ -60,8 +30,21 @@
             <li style="font-weight: bold">T</li>
         </ul>
         </div>
-		<p style="background-color: silver;">Taters give life to the 
-            <a href="https://en.wikipedia.org/wiki/Irish_people" style="color:green;">Irish</a>.</p>
+        
+        <p style="background-color: silver;">Taters give life to the 
+            <a href="https://en.wikipedia.org/wiki/Irish_people" style="color:green;">
+                <cite>Irish.</cite>
+            </a>
+        </p>
+        
+        <blockquote cite="Me">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nesciunt.
+        </blockquote>
+
+        <p><abbr title="-Me">Taters are Good.</abbr></p>
+
+
+
         <form action="/url-to-submit-form" id="form">
             <label for="fries">
                 <input id="fries" type="checkbox" name="f-or-h" checked>Fries
@@ -81,7 +64,7 @@
 	<footer id="footer">
 		<!--Anchor Element-->
         <a href="https://en.wikipedia.org/wiki/Potato" target="_blank">Potato Wiki</a>
-        <a href="#">Jump to Top</a>
+        <a href="#header">Jump to Top</a>
 	</footer>
 </body>
 </html>
