@@ -1,0 +1,151 @@
+/*css_basics.css*/
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
+body {
+    background: lightgray;
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    font: normal 1em Arial, Helveitca, sans-serif;
+    line-height: 1.3em;
+    margin: 0;
+}
+
+.clr {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: lightcoral;
+}
+
+a:active {
+    color:white;
+}
+
+.button {
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    padding: 0.5em 0.6em;
+}
+
+.button:hover {
+    background-color: lightcoral;
+    color: black;
+}
+
+/* use percents when dealing with containers*/
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.box-1 {
+    background-color: #333;
+    color: #fff;
+    /*
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    ^this simplifies to:
+    padding: 0.1% 1% 0.1% 1%;
+    or even simpler: */
+    padding: 0.1% 1%;
+
+    border: 5px red solid;
+    border-width: 1%;
+
+    margin: 1% 0;
+}
+
+.box-1 h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    text-decoration: blue underline;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    word-spacing: 1em;
+}
+
+.box-2 {
+    border: 5px dotted lightgreen;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.categories {
+    border: 1px solid lightslategray;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding: 0 0 0 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li {
+    padding: 6px 0;
+    border-bottom: dotted 1px violet;
+    /*
+    list-style-image: url('../../res/first_tater.jpg');
+    */
+}
+
+.my-form {
+    padding: 1em;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px salmon solid;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+.main-block {
+    float: left;
+    width: 70%;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    float: right;
+    width: 30%;
+    background-color: black;
+    color:whitesmoke;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
